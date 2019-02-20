@@ -8,11 +8,17 @@ $(function () {
     $('#errorRetypePassword').html('password does not mutch').hide();
     $('#errorEmail').html('invalid Email').hide();
 
+$('#divka').click(function(){
+    $('#password').prop('type', 'text');
+    $('#retypePassword').prop('type', 'text');
+    
+})
+
 
     $('#username').focusout(function () {
         console.log('USERNAME focusout works');
         checkUsername();
-    }); 0
+    });
 
     $('#password').focusout(function () {
         console.log('PASSWORD focusout works');
@@ -60,10 +66,10 @@ $(function () {
 
 
     function checkEmail() {
-        const pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+
+        var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
         if (pattern.test($('#email').val())) {
             $('#errorEmail').hide();
-            console.log('chekpass log');
         } else {
             $('#errorEmail').show();
         }
