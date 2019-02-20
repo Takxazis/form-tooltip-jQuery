@@ -2,6 +2,19 @@ body{
     background-color: gray;
 }
 
-#errorUsername{
-    
+.tipUsername{
+    display: none;
+    position: absolute;
+}
+.tipPassword{
+    display: none;
+    position: absolute;
+}
+.tipRetypePassword{
+    display: none;
+    position: absolute;
+}
+.tipEmail{
+    display: none;
+    position: absolute;
 }
