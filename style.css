@@ -1,20 +1,44 @@
 body{
-    background-color: gray;
+    margin: 0;
+    padding: 0;
+    background: rgba(147,206,222,1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
 }
 
-.tipUsername{
+li{
+    list-style-type: none;
+}
+
+.showHide{
+    background-color: #634DDB;
+    max-width: 150px;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    
+}
+.tips{
+    background-color: #F0CB97;
+    padding: 3px 7px 3px 7px;
+    border: 3px solid #DBA94E;
+    border-radius: 10px;
+}
+
+#tipUsername{
     display: none;
     position: absolute;
 }
-.tipPassword{
+#tipPassword{
     display: none;
     position: absolute;
 }
-.tipRetypePassword{
+#tipRetypePassword{
     display: none;
     position: absolute;
 }
-.tipEmail{
+#tipEmail{
     display: none;
     position: absolute;
 }

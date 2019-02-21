@@ -8,30 +8,35 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <h1>Create an account</h1>
 
     <form>
-        <li><span>Username:</span><input type="text" class="formField" id="username"><span class="errorMsg" id="errorUsername"></span></li>
-        <li><span>Password:</span><input type="password" class="formField" id="password"><span class="errorMsg" id="errorPassword"></span></li>
-        <li><span>Retype password:</span><input type="password" class="formField" id="retypePassword"><span class="errorMsg" id="errorRetypePassword"></span></li>
-        <li><span>Email:</span><input type="text" class="formField" id="email"><span class="errorMsg" id="errorEmail"></span></li>
+        <li><span>Username:</span><input type="text" class="formField" id="username"><span class="errorMsg"
+                id="errorUsername"></span></li>
+        <li><span>Password:</span><input type="password" class="formField" id="password"><span class="errorMsg"
+                id="errorPassword"></span></li>
+        <li><span>Retype password:</span><input type="password" class="formField" id="retypePassword"><span
+                class="errorMsg" id="errorRetypePassword"></span></li>
+        <li><span>Email:</span><input type="text" class="formField" id="email"><span class="errorMsg"
+                id="errorEmail"></span></li>
         <!-- <li><input type="submit" value="Create account" class="submit"></li> -->
     </form>
 
-<div id="showPass">show pass</div>
-<div id="hidePass">hide pass</div>
+    <div class="showHide" id="showPass">show pass</div>
+    <div class="showHide" id="hidePass">hide pass</div>
 
-<div class="tipUsername">tooltipUser</div>
-<div class="tipPassword">tooltipPass</div>
-<div class="tipRetypePassword">tooltipRPass</div>
-<div class="tipEmail">tooltipEmail</div>
+    
+        <div class="tips" id="tipUsername">tooltipUser</div>
+        <div class="tips" id="tipPassword">tooltipPass</div>
+        <div class="tips" id="tipRetypePassword">tooltipRPass</div>
+        <div class="tips" id="tipEmail">tooltipEmail</div>
+    
 
-
-    <script src="script.js"></script>
-    <script src="tip.js"></script>
-    <script src="showHide.js"></script>
-
+    <script src="/js/script.js"></script>
+    <script src="/js/tip.js"></script>
+    <script src="/js/showHide.js"></script>
 
 </body>
 
