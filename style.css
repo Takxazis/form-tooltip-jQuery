@@ -18,3 +18,7 @@ body{
     display: none;
     position: absolute;
 }
+
+#hidePass{
+    display: none;
+}

@@ -10,12 +10,7 @@ $(function () {
     $('#errorRetypePassword').html('password does not mutch').hide();
     $('#errorEmail').html('invalid Email').hide();
 
-    $('#divka').click(function () {
-        $('#password').prop('type', 'text');
-        $('#retypePassword').prop('type', 'text');
-        console.log("password revealed");
-
-    })
+    
 
     //form logic
 
@@ -70,7 +65,6 @@ $(function () {
     }
 
 
-
     function checkEmail() {
 
         const pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
@@ -81,63 +75,5 @@ $(function () {
         }
     }
 
-
-    // tip section
-
-    $('#username').hover(function () {
-        $('.tipUsername').css('display', 'block');
-
-    }, function () {
-        $('.tipUsername').css('display', 'none');
-    })
-
-    $(document).mousemove(function (event) {
-        var postionX = event.pageX + 5;
-        var postionY = event.pageY + 5;
-
-        $('.tipUsername').css('left', postionX + 'px').css('top', postionY + 'px');
-    })
-    $('#password').hover(function () {
-        $('.tipPassword').css('display', 'block');
-
-    }, function () {
-        $('.tipPassword').css('display', 'none');
-    })
-
-    $(document).mousemove(function (event) {
-        var postionX = event.pageX + 5;
-        var postionY = event.pageY + 5;
-
-        $('.tipPassword').css('left', postionX + 'px').css('top', postionY + 'px');
-    })
-
-
-    $('#retypePassword').hover(function () {
-        $('.tipRetypePassword').css('display', 'block');
-
-    }, function () {
-        $('.tipRetypePassword').css('display', 'none');
-    })
-
-    $(document).mousemove(function (event) {
-        var postionX = event.pageX + 5;
-        var postionY = event.pageY + 5;
-
-        $('.tipRetypePassword').css('left', postionX + 'px').css('top', postionY + 'px');
-    })
-
-    $('#email').hover(function () {
-        $('.tipEmail').css('display', 'block');
-
-    }, function () {
-        $('.tipEmail').css('display', 'none');
-    })
-
-    $(document).mousemove(function (event) {
-        var postionX = event.pageX + 5;
-        var postionY = event.pageY + 5;
-
-        $('.tipEmail').css('left', postionX + 'px').css('top', postionY + 'px');
-    })
 
 })
